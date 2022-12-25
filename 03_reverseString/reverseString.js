@@ -1,11 +1,10 @@
 const reverseString = function(string) {
 
     let stringArray = string.split('');
-    console.log(stringArray.reverse().join(""));
-
+    return stringArray.reverse().join("");
 };
 
-reverseString("hello world");
+reverseString("");
 
 // Do not edit below this line
 module.exports = reverseString;
