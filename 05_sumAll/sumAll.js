@@ -10,8 +10,5 @@ const sumAll = function(start, end) {
     return (end - start + 1) * (start + end) / 2;
   };
   
-
-console.log(sumAll(123, 1));
-
 // Do not edit below this line
 module.exports = sumAll;
