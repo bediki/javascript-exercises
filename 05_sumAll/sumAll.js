@@ -1,10 +1,17 @@
 const sumAll = function(start, end) {
+    if (start < 0 || end < 0 || typeof start !== "number" || typeof end !== "number") {
+      return "ERROR";
+    }
+  
+    if (start > end) {
+      [start, end] = [end, start];
+    }
+  
+    return (end - start + 1) * (start + end) / 2;
+  };
+  
 
-    if(start <0 | end <0) return "ERROR with negative numbers'"
-
-    let sumOfAll = end*(end+1)/2;
-    return sumOfAll;
-};
+console.log(sumAll(123, 1));
 
 // Do not edit below this line
 module.exports = sumAll;
